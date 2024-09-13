@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Briefing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="logo" id="logo">Briefing</h1>
+            <nav class="nav" role="navigation" aria-labelledby="logo">
+                <ul>
+                    <li><a href="#intro" aria-label="Ir para Introdução">Introdução</a></li>
+                    <li><a href="#detalhes" aria-label="Ir para Detalhes do Projeto">Detalhes</a></li>
+                    <li><a href="#equipe" aria-label="Ir para Equipe">Equipe</a></li>
+                    <li><a href="#contato" aria-label="Ir para Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section id="intro" class="section intro" aria-labelledby="intro-heading">
+            <div class="container">
+                <h2 id="intro-heading">Introdução</h2>
+                <p>Bem-vindo ao briefing do projeto. Aqui você encontrará todas as informações essenciais sobre o projeto.</p>
+            </div>
+        </section>
+
+        <section id="detalhes" class="section detalhes" aria-labelledby="detalhes-heading">
+            <div class="container">
+                <h2 id="detalhes-heading">Detalhes do Projeto</h2>
+                <p>Este projeto tem como objetivo fornecer soluções inovadoras e eficazes. Abaixo estão os detalhes principais do projeto.</p>
+                <ul>
+                    <li><strong>Objetivo:</strong> Descrever o objetivo principal do projeto.</li>
+                    <li><strong>Escopo:</strong> Definir o escopo do projeto e o que está incluído.</li>
+                    <li><strong>Prazo:</strong> Indicar o prazo para a conclusão do projeto.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="equipe" class="section equipe" aria-labelledby="equipe-heading">
+            <div class="container">
+                <h2 id="equipe-heading">Equipe</h2>
+                <div class="team-member" role="article">
+                    <img src="terno.jpg" alt="Foto de Membro 1" aria-describedby="membro1-desc">
+                    <h3>Membro 1</h3>
+                    <p id="membro1-desc">Função: Gerente de Projeto</p>
+                </div>
+                <div class="team-member" role="article">
+                    <img src="terno2.jpg" alt="Foto de Membro 2" aria-describedby="membro2-desc">
+                    <h3>Membro 2</h3>
+                    <p id="membro2-desc">Função: Designer</p>
+                </div>
+                <div class="team-member" role="article">
+                    <img src="terno3.jpg" alt="Foto de Membro 3" aria-describedby="membro3-desc">
+                    <h3>Membro 3</h3>
+                    <p id="membro3-desc">Função: Desenvolvedor</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section contato" aria-labelledby="contato-heading">
+            <div class="container">
+                <h2 id="contato-heading">Contato</h2>
+                <p>Para mais informações, entre em contato conosco através do formulário abaixo ou pelos nossos canais de comunicação.</p>
+                
+                <form action="#" method="post" aria-labelledby="form-heading">
+                    <fieldset>
+                        
+                        <legend id="form-heading">Formulário de Contato</legend>
+                    
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required aria-required="true">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Briefing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
